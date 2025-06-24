@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to my website. This website talks in detail about me, My Projects, the services I provide, my skills, etc."
+    />
+    <meta property="og:url" content="https://kero.kesug.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kerolos Adel's Portfolio" />
+    <meta
+      property="og:description"
+      content="Welcome to my website. This website talks in detail about me, My Projects, the services I provide, my skills, etc."
+    />
+    <meta property="og:image" content="https://kero.kesug.com/assets/og.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="kero.kesug.com" />
+    <meta property="twitter:url" content="https://kero.kesug.com" />
+    <meta name="twitter:title" content="Kerolos Adel's Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Welcome to my website. This website talks in detail about me, My Projects, the services I provide, my skills, etc."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kero.kesug.com/assets/og.webp"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    
+
+    <!-- تحسين تحميل الموارد الخارجية -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- تحسين تحميل الخطوط -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- تحسين تحميل الأيقونات -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    /></noscript>
+
+    <!-- تحميل CSS الأساسي مؤجل -->
+    <link
+      rel="preload"
+      href="color_theme_accessible.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="color_theme_accessible.css"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+<link rel="preload" href="animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="animations.css"></noscript>
+
+<link rel="preload" href="loading.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="loading.css"></noscript>
+    <!-- مكتبة Typed.js مؤجلة -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+
+
+    <title>Kerolos Adel Portfolio</title>
+  </head>
+
+  <body class="loading">
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+    <div class="popup" id="popup">
+      <img src="assets/light.webp" alt="light" loading="lazy" id="popupImg">
+      <h2>Thank You!</h2>
+      <p>Your details has been successfully sibmitted. Thanks!</p>
+      <button type="button" onclick="closePopup()">Ok</button>
+    </div>
+    <nav id="navBar">
+      <div class="logo">
+        <img src="assets/logo.webp" alt="logo" width="200" height="200" id="logoImg"><a
+          href="#"
+          >Kerolos Adel <br /><span>Web Masterpieces</span></a
+        ><i class="ri-arrow-down-s-line" id="menuBtn"></i>
+      </div>
+      <div class="nav-links">
+        <a id="secBtn" href="#">Home</a><a id="secBtn1" href="#about">About</a
+        ><a id="secBtn2" href="#skills">Skills</a
+        ><a id="secBtn3" href="#services">Services</a
+        ><a id="secBtn4" href="#projects">Projects</a
+        ><a id="secBtn5" href="#career">Experience</a
+        ><a id="secBtn6" href="#contact">Contact</a
+        ><button id="toggler">
+          <i class="ri-moon-line" id="togglerIcon"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="left-section">
+        <div class="top">
+          <h2>Creative Front-End Web Developer</h2>
+          <p>
+            Design and code beautifully simple services without overwhelming
+            yourself with complexity. Enjoy your passion for creating with ease
+            and love.
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/eng-kerolos-adel"
+              ><button class="git">
+                <i class="ri-github-fill"></i> My GitHub
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Other Socials</p>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com/kerolos.adel.eleshaa/"
+              title="social"
+              ><i class="ri-facebook-circle-fill"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/kerolos.adel.eleshaa/"
+              title="social"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/eng-kerolos-adel/"
+              title="social"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@Kerolos_Adel_Web_Masterpieces"
+              title="social"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <img id="homeImg" alt="home" src="assets/homeBlack.webp" />
+    </section>
+    <section class="about" id="about">
+      <div class="inner">
+        <div class="title"><h2>About Me</h2></div>
+        <div class="about-content">
+          <div class="column left">
+            <img src="assets/profile.webp" alt="profile" width="300" height="300" loading="lazy">
+          </div>
+          <div class="column right">
+            <div class="text">
+              I'm Kerolos Adel <br />and I'm <span class="typing-2">Engineer</span>
+            </div>
+            <p>
+              I am a dedicated and enthusiastic computer science student at
+              Thebes Academy in Giza, Egypt. My primary focus is on front-end
+              development, where I combine technical skills and creativity to
+              build user-friendly interfaces and responsive websites. My goal is
+              to bridge the gap between design and technology, ensuring seamless
+              and engaging digital experiences. I am driven by a passion for
+              continuous learning and staying up-to-date with the latest
+              industry trends and technologies. I am committed to expanding my
+              knowledge and honing my skills to deliver innovative solutions in
+              the ever-evolving field of web development.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1JVD0uC3JNAoLB57tg9ipsa2-20Cbyppl/view?usp=sharing"
+              ><button>View CV<i class="ri-external-link-line"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills-desc">
+        <h3>My Creative Skills</h3>
+        <p>
+          My meticulous approach to coding ensures clean, efficient, and
+          scalable solutions. I leverage HTML for structured content, CSS for
+          aesthetic styling, and JavaScript for dynamic functionality.
+          Additionally, my adeptness in PHP enables server-side scripting, while
+          SQL proficiency empowers me to manage databases seamlessly. This
+          well-rounded skill set positions me as a versatile web developer
+          capable of creating diverse and impactful online experiences.
+        </p>
+      </div>
+      <div class="skills-stats">
+        <i class="ri-html5-line"></i>
+        <div class="skill-info">
+          <h4>15+</h4>
+          <p>JavaScript Projects</p>
+        </div>
+        <i class="ri-css3-line"></i>
+        <div class="skill-info">
+          <h4>3+</h4>
+          <p>React Projects</p>
+        </div>
+        <div class="skill-info">
+          <h4>25+</h4>
+          <p>HTML5 Projects</p>
+        </div>
+        <i class="ri-javascript-line"></i>
+        <div class="skill-info">
+          <h4>25+</h4>
+          <p>CSS3 Projects</p>
+        </div>
+        <i class="ri-reactjs-line"></i><i class="ri-code-s-slash-line"></i>
+        <div class="skill-info">
+          <h4>10+</h4>
+          <p>Bootstrap Projects</p>
+        </div>
+        <i class="ri-database-2-line"></i>
+        <div class="skill-info">
+          <h4>12+</h4>
+          <p>Tailwind Projects</p>
+        </div>
+        <div class="skill-info">
+          <h4>5+</h4>
+          <p>PHP Projects</p>
+        </div>
+        <i class="ri-bootstrap-line"></i>
+        <div class="skill-info">
+          <h4>5+</h4>
+          <p>MySQL Projects</p>
+        </div>
+        <i class="ri-tailwind-css-line"></i>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="inner">
+        <div class="title"><h2>My Services</h2></div>
+        <a href="courses/complete-course/index.html"
+          ><button>
+            Explore my Courses <i class="ri-book-marked-fill"></i></button
+        ></a>
+        <div class="items">
+          <div class="item">
+            <i class="ri-brush-line"></i><a href="#">Photo Editing</a>
+            <p>
+              In two years mastering Photoshop, I've transformed visions into
+              captivating visuals, wielding creativity and precision to craft
+              compelling designs.
+            </p>
+          </div>
+          <div class="item">
+            <i class="ri-code-s-slash-line"></i
+            ><a href="#"> Frontend Development</a>
+            <p>
+              With 5 years in web development, I have designed dynamic, user
+              focused websites and mastered various techniques to deliver
+              impactful online experiences. And I still haven't finished.
+            </p>
+          </div>
+          <div class="item">
+            <i class="ri-pencil-ruler-2-line"></i><a href="#">Logo Industry</a>
+            <p>
+              Over three years in the logo industry, I've shaped brand
+              identities with creativity and precision, crafting distinctive
+              symbols that resonate effectively.
+            </p>
+          </div>
+          <div class="item">
+            <i class="ri-news-line"></i><a href="#">Portfolio Websites</a>
+            <p>
+              Built a professional portfolio for you with content management
+              features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects-header">
+        <h3>I Can Help You With:</h3>
+        <a href="https://github.com/eng-kerolos-adel/"
+          ><button class="btn">See My GitHub</button></a
+        >
+      </div>
+      <div class="projects_categories">
+        <section class="category">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="ri-macbook-line"></i>
+              <h4>Portfolio Websites</h4>
+            </div>
+            <div class="category-desc">
+              <p>
+                Designing and developing eye-catching, fully responsive
+                portfolio websites that highlight your skills and projects,
+                ensuring a professional online presence.
+              </p>
+            </div>
+          </div>
+          <div class="category-projects">
+            <div class="project-card">
+              <img
+  src="assets/1.webp"
+  alt="Portfolio 1"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Complete Responsive Portfolio Design</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design, I will use modern HTML, CSS, and JavaScript to
+                create a fully responsive portfolio design with functional
+                scrolling to the element. We'll be using CSS Grid, CSS Flexbox,
+                media queries.
+              </p>
+              <a href="portfolio1/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+  src="assets/2.webp"
+  alt="Portfolio 2"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Complete Responsive Portfolio Design</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design I will be using modern HTML, CSS and JavaScript
+                to create a responsive portfolio design with scroll to element
+                and also scroll to top. We'll be using CSS Flexbox and media
+                queries.
+              </p>
+              <a href="portfolio2/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+  src="assets/3.webp"
+  alt="Portfolio 3"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Coding Simplest Portfolio</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design, I will use modern HTML and CSS to create a fully
+                responsive portfolio design with a gradient grid background and
+                a glass theme UI design. We will use CSS Flexbox and media
+                queries.
+              </p>
+              <a href="portfolio3/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+  src="assets/4.webp"
+  alt="Portfolio 4"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Portfolio Website Html CSS Only</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design, I will use modern HTML and CSS to create a fully
+                responsive portfolio design with a great color theme. We'll be
+                using CSS Flexbox and media queries for our responsive design
+                and CSS transitions.
+              </p>
+              <a href="portfolio4/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+  src="assets/5.webp"
+  alt="Portfolio 5"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Complete Responsive Personal Portfolio Website</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design, I will use modern HTML and CSS to create a
+                completely responsive Portfolio Design with awesome color theme.
+                We'll be using CSS Flexbox, This portfolio contains Main,
+                Portfolio, Customer Feedback section.
+              </p>
+              <a href="portfolio5/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+  src="assets/6.webp"
+  alt="Portfolio 6"
+  loading="lazy"
+  width="400"
+  height="300"
+  class="project-card-image"
+/>
+              <div class="project-card-info">
+                <h5>Complete Responsive Portfolio</h5>
+              </div>
+              <p class="project-card-desc">
+                In this design, I will use modern HTML, CSS, and JavaScript to
+                create a fully responsive portfolio design with functional
+                scrolling to the element. We'll be using CSS Grid, CSS Flexbox,
+                media queries.
+              </p>
+              <a href="portfolio6/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/manss.webp"
+                alt="Portfolio 3"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h5>Amonious Mourad Portfolio</h5>
+              </div>
+              <p class="project-card-desc">
+                This is one of my works that I built for my friend Amonious
+                Mourad, he is a photographer.
+              </p>
+              <a href="manss/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/nevin.webp"
+                alt="Portfolio 4"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h5>Nevin Assad Portfolio</h5>
+              </div>
+              <p class="project-card-desc">
+                This is my latest work that I built for my friend Nevin Asaad
+                who is a graphic designer and HR.
+              </p>
+              <a href="nevin/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="category">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="ri-group-2-line"></i>
+              <h4>Website Development</h4>
+            </div>
+            <div class="category-desc">
+              <p>
+                End-to-end development of responsive websites that look great on
+                all devices, with a focus on performance and aesthetics.
+              </p>
+            </div>
+          </div>
+          <div class="category-projects">
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/Iphone.webp"
+                alt="Iphone"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h5>IPhone Dynamic Island</h5>
+              </div>
+              <p class="project-card-desc">
+                This Page contains my project, which is an interface similar to
+                the iPhone with four different colors and the new Dynamic Island
+                using html and css.
+              </p>
+              <a href="iphone/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/Facebook.webp"
+                alt="Facebook"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h5>Facebook Log in and Sign up</h5>
+              </div>
+              <p class="project-card-desc">
+                This Page contains my project, which is an interface similar to
+                the Facebook login site using HTML and CSS
+              </p>
+              <a href="facebook/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/LinearBox.webp"
+                alt="LinearBox"
+                class="project-card-image"
+              />
+              <div class="project-card-info">
+                <h5>Log in With Linear Box</h5>
+              </div>
+              <p class="project-card-desc">
+                This Page contains my project, which is a login interface using
+                HTML and CSS and using colorful and animated edges.
+              </p>
+              <a href="linear-box/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+            <div class="project-card">
+              <img
+                loading="lazy"
+                src="assets/Weather.webp"
+                alt="Weather"
+                class="project-card-image"
+              />
+              <div class="project-card-info"><h5>Weather App</h5></div>
+              <p class="project-card-desc">
+                This my project, which is a simple application to know the
+                weather using HTML and CSS, but without the API key.
+              </p>
+              <a href="weather/index.html"
+                ><button class="btn">View Live Demo</button></a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="career" id="career">
+      <div class="inner">
+        <div class="career-jobs">
+          <h3>Work Experience</h3>
+          <div class="job">
+            <i class="ri-code-s-slash-fill"></i>
+            <div class="job-info">
+              <h4>Freelancer Frontend Developer</h4>
+              <p>2022 - Present</p>
+            </div>
+          </div>
+          <div class="job">
+            <i class="ri-brush-fill"></i>
+            <div class="job-info">
+              <h4>Photo Editing With Canva & Adobe Photoshop</h4>
+              <p>2020 – 2022</p>
+            </div>
+          </div>
+          <div class="job">
+            <i class="ri-pencil-ruler-2-fill"></i>
+            <div class="job-info">
+              <h4>Logo Industry With Canva & Adobe Illustrator</h4>
+              <p>2019 – 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="career-awards">
+          <h3>Awards & Recognition</h3>
+          <div class="award">
+            <div>
+              <i class="ri-award-fill"></i>
+              <div class="award-info">
+                <h4>Web Development Course Certificate from Udemy</h4>
+              </div>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1xOwL_AZnRDyifLbYv-8ZS3yK-NTx1pHY/view?usp=sharing"
+              title="certificate"
+              target="_blank"
+              ><i class="ri-external-link-line"></i
+            ></a>
+          </div>
+          <div class="award">
+            <div>
+              <i class="ri-award-fill"></i>
+              <div class="award-info">
+                <h4>Web Developer Course Certificate from Udemy</h4>
+              </div>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1RwKw8N4l33emD3xKzI5W7z3NqURAp5u4/view?usp=sharing"
+              title="certificate"
+              target="_blank"
+              ><i class="ri-external-link-line"></i
+            ></a>
+          </div>
+          <div class="award">
+            <div>
+              <i class="ri-award-fill"></i>
+              <div class="award-info">
+                <h4>Front End Course Certificate from Udemy</h4>
+              </div>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1MIrrpuT6Ey59qPoTQK2vUZE-xhQvwJVm/view?usp=sharing"
+              title="certificate"
+              target="_blank"
+              ><i class="ri-external-link-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <div class="contact-right">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form
+            action="https://formsubmit.co/kerolos.adel.eleshaa@gmail.com"
+            class="form"
+            id="contact-form"
+            method="POST"
+            target="hidden-frame"
+          >
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="Full name"
+                required
+              /><input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="Email address"
+                required
+              /><input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="form-input"
+                placeholder="Phone number"
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message"
+              required
+            ></textarea
+            ><iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d230098.32720801764!2d32.659466949999995!3d25.694941099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1724497995421!5m2!1sen!2seg"
+              width="400"
+              height="300"
+              loading="lazy"
+              title="Location map of our office"
+            ></iframe
+            ><input type="hidden" name="device" id="device-info" /><input
+              type="hidden"
+              name="_template"
+              value="table"
+            /><input
+              type="hidden"
+              name="_autoresponse"
+              value="Thanks For Submiting The Form"
+            /><input type="hidden" name="_captcha" value="false" /><input
+              type="hidden"
+              name="_subject"
+              value="New submission From Your Website"
+            /><input type="hidden" name="location" id="location" /><button
+              class="form-btn"
+              type="submit"
+            >
+              <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
+            </button>
+          </form>
+          <iframe name="hidden-frame" style="display: none"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="#">Terms of Service</a><a href="#">Privacy Policy</a>
+      <p><span>©</span> 2025 Kerolos Adel Web Masterpieces</p>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+    <script src="script.js" defer></script>
+  </body>
+</html>

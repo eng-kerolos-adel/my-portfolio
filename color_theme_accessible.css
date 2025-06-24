@@ -1,0 +1,464 @@
+/* 🎨 متغيرات الألوان حسب الوضع */
+
+:root {
+  /* --- Light Mode Colors --- */
+  --clr-bg-hero: #ffffff;
+  --clr-bg-about: #f0f4f8;
+  --clr-bg-skills: #e8f0fe;
+  --clr-bg-services: #f9fbfd;
+  --clr-bg-projects: #ffffff;
+  --clr-bg-contact: #dceefb;
+  --clr-bg-footer: #003366;
+  --clr-bg-navbar: #ffffff;
+
+  --clr-text-primary: #003366;
+  --clr-text-secondary: #555555;
+  --clr-link: #0066cc;
+  --clr-link-hover: #3399ff;
+
+  --clr-btn-bg: #004aad;
+  --clr-btn-hover: #003580;
+  --clr-btn-text: #ffffff;
+
+  --clr-btn-secondary-bg: #ffffff;
+  --clr-btn-secondary-hover: #e6f0ff;
+  --clr-btn-secondary-text: #004aad;
+
+  --clr-footer-text: #ffffff;
+  --clr-footer-subtext: #dddddd;
+  --clr-footer-link: #90caf9;
+
+  --clr-navbar-text: #003366;
+  --clr-navbar-hover: #0066cc;
+
+  --clr-border-default: #cccccc;
+  --clr-border-hover: #999999;
+}
+
+[data-theme="dark"] {
+  /* --- Dark Mode Colors --- */
+  --clr-bg-hero: #1e1e1e;
+  --clr-bg-about: #222831;
+  --clr-bg-skills: #1a1a2e;
+  --clr-bg-services: #263238;
+  --clr-bg-projects: #121212;
+  --clr-bg-contact: #263238;
+  --clr-bg-footer: #0d1117;
+  --clr-bg-navbar: #121212;
+
+  --clr-text-primary: #90caf9;
+  --clr-text-secondary: #aaaaaa;
+  --clr-link: #64b5f6;
+  --clr-link-hover: #bbdefb;
+
+  --clr-btn-bg: #0d47a1;
+  --clr-btn-hover: #1976d2;
+  --clr-btn-text: #ffffff;
+
+  --clr-btn-secondary-bg: #1e1e1e;
+  --clr-btn-secondary-hover: #263238;
+  --clr-btn-secondary-text: #64b5f6;
+
+  --clr-footer-text: #ffffff;
+  --clr-footer-subtext: #aaaaaa;
+  --clr-footer-link: #90caf9;
+
+  --clr-navbar-text: #ffffff;
+  --clr-navbar-hover: #90caf9;
+
+  --clr-border-default: #444444;
+  --clr-border-hover: #666666;
+}
+
+/* ✅ استخدام المتغيرات */
+body {
+  background-color: var(--clr-bg-hero);
+  color: var(--clr-text-primary);
+}
+
+/* ✅ Navbar */
+nav.navbar {
+  background-color: var(--clr-bg-navbar);
+  color: var(--clr-navbar-text);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-border-default);
+}
+nav.navbar a {
+  color: var(--clr-navbar-text);
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav.navbar a:hover {
+  color: var(--clr-navbar-hover);
+}
+
+section.about {
+  background-color: var(--clr-bg-about);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.skills {
+  background-color: var(--clr-bg-skills);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.services {
+  background-color: var(--clr-bg-services);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.projects {
+  background-color: var(--clr-bg-projects);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.contact {
+  background-color: var(--clr-bg-contact);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+footer {
+  background-color: var(--clr-bg-footer);
+  color: var(--clr-footer-text);
+  border-top: 1px solid var(--clr-border-default);
+}
+
+footer a {
+  color: var(--clr-footer-link);
+}
+
+/* روابط */
+a {
+  color: var(--clr-link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--clr-link-hover);
+}
+
+/* أزرار */
+button.primary {
+  background-color: var(--clr-btn-bg);
+  color: var(--clr-btn-text);
+  border: 1px solid var(--clr-border-default);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.primary:hover {
+  background-color: var(--clr-btn-hover);
+  border-color: var(--clr-border-hover);
+}
+
+button.secondary {
+  background-color: var(--clr-btn-secondary-bg);
+  color: var(--clr-btn-secondary-text);
+  border: 1px solid var(--clr-btn-secondary-text);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.secondary:hover {
+  background-color: var(--clr-btn-secondary-hover);
+  border-color: var(--clr-border-hover);
+}
+
+/* Placeholder داخل الفورم */
+input::placeholder,
+textarea::placeholder {
+  color: #888888;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #999999;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Box Shadows */
+.card,
+.box,
+.widget {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--clr-border-default);
+}
+[data-theme="dark"] .card,
+[data-theme="dark"] .box,
+[data-theme="dark"] .widget {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--clr-border-default);
+}
+
+/* ✅ Borders for Forms, Images, Carousel */
+form,
+input,
+textarea {
+  border-radius: 6px;
+  padding: 8px;
+}
+input:hover,
+textarea:hover {
+  border-color: var(--clr-border-hover);
+}
+
+.carousel,
+.slider {
+  border: 1px solid var(--clr-border-default);
+  border-radius: 10px;
+}
+.carousel:hover,
+.slider:hover {
+  border-color: var(--clr-border-hover);
+}
+/* 🎨 متغيرات الألوان حسب الوضع */
+
+:root {
+  /* --- Light Mode Colors --- */
+  --clr-bg-hero: #ffffff;
+  --clr-bg-about: #f0f4f8;
+  --clr-bg-skills: #e8f0fe;
+  --clr-bg-services: #f9fbfd;
+  --clr-bg-projects: #ffffff;
+  --clr-bg-contact: #dceefb;
+  --clr-bg-footer: #003366;
+  --clr-bg-navbar: #ffffff;
+
+  --clr-text-primary: #003366;
+  --clr-text-secondary: #555555;
+  --clr-link: #0066cc;
+  --clr-link-hover: #3399ff;
+
+  --clr-btn-bg: #004aad;
+  --clr-btn-hover: #003580;
+  --clr-btn-text: #ffffff;
+
+  --clr-btn-secondary-bg: #ffffff;
+  --clr-btn-secondary-hover: #e6f0ff;
+  --clr-btn-secondary-text: #004aad;
+
+  --clr-footer-text: #ffffff;
+  --clr-footer-subtext: #dddddd;
+  --clr-footer-link: #90caf9;
+
+  --clr-navbar-text: #003366;
+  --clr-navbar-hover: #0066cc;
+
+  --clr-border-default: #cccccc;
+  --clr-border-hover: #999999;
+}
+
+[data-theme="dark"] {
+  /* --- Dark Mode Colors --- */
+  --clr-bg-hero: #1e1e1e;
+  --clr-bg-about: #222831;
+  --clr-bg-skills: #1a1a2e;
+  --clr-bg-services: #263238;
+  --clr-bg-projects: #121212;
+  --clr-bg-contact: #263238;
+  --clr-bg-footer: #0d1117;
+  --clr-bg-navbar: #121212;
+
+  --clr-text-primary: #90caf9;
+  --clr-text-secondary: #aaaaaa;
+  --clr-link: #64b5f6;
+  --clr-link-hover: #bbdefb;
+
+  --clr-btn-bg: #0d47a1;
+  --clr-btn-hover: #1976d2;
+  --clr-btn-text: #ffffff;
+
+  --clr-btn-secondary-bg: #1e1e1e;
+  --clr-btn-secondary-hover: #263238;
+  --clr-btn-secondary-text: #64b5f6;
+
+  --clr-footer-text: #ffffff;
+  --clr-footer-subtext: #aaaaaa;
+  --clr-footer-link: #90caf9;
+
+  --clr-navbar-text: #ffffff;
+  --clr-navbar-hover: #90caf9;
+
+  --clr-border-default: #444444;
+  --clr-border-hover: #666666;
+}
+
+/* ✅ استخدام المتغيرات */
+body {
+  background-color: var(--clr-bg-hero);
+  color: var(--clr-text-primary);
+}
+
+/* ✅ Navbar */
+nav.navbar {
+  background-color: var(--clr-bg-navbar);
+  color: var(--clr-navbar-text);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-border-default);
+}
+nav.navbar a {
+  color: var(--clr-navbar-text);
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav.navbar a:hover {
+  color: var(--clr-navbar-hover);
+}
+
+section.about {
+  background-color: var(--clr-bg-about);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.skills {
+  background-color: var(--clr-bg-skills);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.services {
+  background-color: var(--clr-bg-services);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.projects {
+  background-color: var(--clr-bg-projects);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+section.contact {
+  background-color: var(--clr-bg-contact);
+  border-bottom: 1px solid var(--clr-border-default);
+}
+
+footer {
+  background-color: var(--clr-bg-footer);
+  color: var(--clr-footer-text);
+  border-top: 1px solid var(--clr-border-default);
+}
+
+footer a {
+  color: var(--clr-footer-link);
+}
+
+/* روابط */
+a {
+  color: var(--clr-link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--clr-link-hover);
+}
+
+/* أزرار */
+button.primary {
+  background-color: var(--clr-btn-bg);
+  color: var(--clr-btn-text);
+  border: 1px solid var(--clr-border-default);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.primary:hover {
+  background-color: var(--clr-btn-hover);
+  border-color: var(--clr-border-hover);
+}
+
+button.secondary {
+  background-color: var(--clr-btn-secondary-bg);
+  color: var(--clr-btn-secondary-text);
+  border: 1px solid var(--clr-btn-secondary-text);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.secondary:hover {
+  background-color: var(--clr-btn-secondary-hover);
+  border-color: var(--clr-border-hover);
+}
+
+/* Placeholder داخل الفورم */
+input::placeholder,
+textarea::placeholder {
+  color: #888888;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #999999;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Box Shadows */
+.card,
+.box,
+.widget {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--clr-border-default);
+}
+[data-theme="dark"] .card,
+[data-theme="dark"] .box,
+[data-theme="dark"] .widget {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--clr-border-default);
+}
+
+/* ✅ Borders for Forms, Images, Carousel */
+form,
+input,
+textarea {
+  border-radius: 6px;
+  padding: 8px;
+}
+input:hover,
+textarea:hover {
+  border-color: var(--clr-border-hover);
+}
+
+.carousel,
+.slider {
+  border: 1px solid var(--clr-border-default);
+  border-radius: 10px;
+}
+.carousel:hover,
+.slider:hover {
+  border-color: var(--clr-border-hover);
+}

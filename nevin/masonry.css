@@ -1,0 +1,112 @@
+
+body {
+  background: #f9f9f9;
+  color: #465665;
+}
+
+a {
+  color: #5b7083;
+  transition: all .25s ease-in-out;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 1em;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.title,
+.desc,
+.intro {
+  text-align: center;
+}
+
+.intro {
+  margin: 1.75em 0 .75em;
+  border-bottom: 3px double rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.75em;
+}
+
+.intro a {
+  opacity: .7;
+}
+
+.intro a:hover {
+  opacity: 1;
+}
+
+.intro h3 {
+  font-size: .825em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: .25em .75em .75em;
+}
+
+.intro h3 a {
+  font-weight: 400;
+}
+
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+}
+
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; 
+  vertical-align: top; 
+}
+
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+.masonry.bordered {
+  column-rule: 1px solid #eee;
+  column-gap: 50px;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.masonry.gutterless {
+  column-gap: 0;
+}
+
+.masonry.gutterless .brick {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+
+  .masonry {
+    column-count: 3;
+  }
+}

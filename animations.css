@@ -1,0 +1,330 @@
+/* Base Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-10deg) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Navbar Animations */
+nav {
+  animation: slideUp 0.8s ease-out;
+}
+
+nav .logo {
+  animation: slideIn 0.8s ease-out;
+}
+
+nav .nav-links a {
+  animation: fadeIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  transform: translateY(-2px);
+  color: var(--clr-navbar-hover);
+}
+
+/* Home Section Animations */
+.home {
+  animation: fadeIn 1s ease-out;
+}
+
+.home .left-section .top h2 {
+  animation: slideUp 0.8s ease-out;
+}
+
+.home .left-section .top p {
+  animation: slideUp 1s ease-out;
+}
+
+.home .left-section .top .buttons {
+  animation: slideUp 1.2s ease-out;
+}
+
+.home .left-section .bottom {
+  animation: slideUp 1.4s ease-out;
+}
+
+.home > img {
+  animation: scaleIn 1s ease-out;
+}
+
+/* About Section Animations */
+.about .inner {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.about .inner .title {
+  animation: slideUp 0.8s ease-out;
+}
+
+.about .inner .left img {
+  animation: scaleIn 0.8s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.about .inner .left img:hover {
+  transform: scale(1.05);
+}
+
+.about .inner .right .text {
+  animation: slideIn 0.8s ease-out;
+}
+
+.about .inner .right p {
+  animation: slideIn 1s ease-out;
+}
+
+/* Skills Section Animations */
+.skills-desc {
+  animation: slideUp 0.8s ease-out;
+}
+
+.skills-stats {
+  animation: fadeIn 1s ease-out;
+}
+
+.skills-stats i {
+  animation: rotateIn 0.8s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.skills-stats i:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.skill-info {
+  animation: scaleIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.skill-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section Animations */
+.services .inner {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.services .inner .title {
+  animation: slideUp 0.8s ease-out;
+}
+
+.services .inner .items .item {
+  animation: scaleIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.services .inner .items .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services .inner .items .item i {
+  transition: transform 0.3s ease;
+}
+
+.services .inner .items .item:hover i {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Projects Section Animations */
+.projects-header {
+  animation: slideUp 0.8s ease-out;
+}
+
+.category-header {
+  animation: slideIn 0.8s ease-out;
+}
+
+.project-card {
+  animation: scaleIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-image {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-image {
+  transform: scale(1.05);
+}
+
+/* Career Section Animations */
+.career .inner {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.career h3 {
+  animation: slideUp 0.8s ease-out;
+}
+
+.job,
+.award {
+  animation: slideIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.job:hover,
+.award:hover {
+  transform: translateX(5px);
+}
+
+/* Contact Section Animations */
+.contact-content {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.form-title {
+  animation: slideUp 0.8s ease-out;
+}
+
+.form-input {
+  animation: scaleIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-btn {
+  animation: scaleIn 0.8s ease-out;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Animations */
+footer {
+  animation: fadeIn 0.8s ease-out;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateY(-2px);
+  color: var(--clr-footer-link);
+}
+
+/* Button Animations */
+button,
+.btn {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .btn:hover {
+  transform: none;
+}
+
+/* Dark Mode Toggle Animation */
+#toggler {
+  transition: all 0.3s ease;
+}
+
+#toggler > i {
+  transition: all 0.3s ease;
+}
+
+#toggler:hover > i {
+  transform: rotate(30deg);
+}
+
+/* Popup Animation */
+.popup {
+  animation: scaleIn 0.4s ease-out;
+}
+
+/* Social Icons Animation */
+.icons a {
+  transition: all 0.3s ease;
+}
+
+.icons a:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Image Animations */
+img {
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Link Animations */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
