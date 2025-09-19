@@ -87,7 +87,7 @@ const Projects = () => {
       title: "Facebook – UI Clone",
       description:
         "A simple Facebook-like interface recreated using Next.js and Tailwind CSS.",
-      image: "/Facebook.jpeg",
+      image: "/facebook.jpeg",
       link: "https://facebook-similer.vercel.app/",
     },
     {
@@ -95,7 +95,7 @@ const Projects = () => {
       title: "Linear – Modern Login Form",
       description:
         "A clean login form inspired by Linear, built with Next.js and Tailwind CSS.",
-      image: "/Linear.jpeg",
+      image: "/linear.jpeg",
       link: "https://linear-log-in-form.vercel.app/",
     },
     {
@@ -103,7 +103,7 @@ const Projects = () => {
       title: "Blur Effect Login Form",
       description:
         "A stylish login screen with a blur background effect, made using Next.js and Tailwind CSS.",
-      image: "/Blur.jpeg",
+      image: "/blur.jpeg",
       link: "https://blur-log-in-form.vercel.app/",
     },
     {
@@ -111,7 +111,7 @@ const Projects = () => {
       title: "Hilink – Travel App UI",
       description:
         "A modern travel app interface built with Next.js and Tailwind CSS.",
-      image: "/Hilink.jpeg",
+      image: "/hilink.jpeg",
       link: "https://hilink-project-travel-app.vercel.app/",
     },
     {
@@ -119,7 +119,7 @@ const Projects = () => {
       title: "YC Directory – Simple Clone",
       description:
         "A simplified version of YC Directory built using Next.js and Tailwind CSS.",
-      image: "/YC-directory.jpeg",
+      image: "/yc-directory.jpeg",
       link: "https://new-yc-directory.vercel.app/",
     },
     {
@@ -127,7 +127,7 @@ const Projects = () => {
       title: "Movies App",
       description:
         "A movie browsing app powered by Next.js, TMDB API, and styled with Tailwind CSS.",
-      image: "/Movies.jpeg",
+      image: "/movies.jpeg",
       link: "https://kero-movies-app.vercel.app/",
     },
     {
@@ -143,7 +143,7 @@ const Projects = () => {
       title: "Apple-Inspired Web App",
       description:
         "A modern Apple-style web design built with Next.js and Tailwind CSS.",
-      image: "/Apple.jpeg",
+      image: "/apple.jpeg",
       link: "https://apple-web-app-five.vercel.app/",
     },
     {
@@ -151,7 +151,7 @@ const Projects = () => {
       title: "Interactive Calculator",
       description:
         "A simple calculator app created using Next.js, React, and Tailwind CSS.",
-      image: "/Calculator.jpeg",
+      image: "/calculator.jpeg",
       link: "https://my-calculator-jade-ten.vercel.app/",
     },
   ];
