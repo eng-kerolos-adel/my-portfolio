@@ -1,11 +1,11 @@
-import type { IConfig } from 'next-sitemap'
+import type { IConfig } from "next-sitemap";
 
 const config: IConfig = {
-  siteUrl: 'https://yourportfolio.com', 
+  siteUrl: "https://kerolos-adel.vercel.app",
   generateRobotsTxt: true,
-  changefreq: 'monthly',
-  priority: 1.0,
-  sitemapSize: 5000,
-}
+  sitemapSize: 7000,
+  changefreq: "weekly",
+  priority: 0.7,
+};
 
-export default config
+export default config;

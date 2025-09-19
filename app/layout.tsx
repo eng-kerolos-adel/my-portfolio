@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     siteName: "Kerolos Adel Portfolio",
     images: [
       {
-        url: "/",
+        url: "/og.webp",
         width: 1200,
         height: 630,
         alt: "Kerolos Adel Portfolio",
